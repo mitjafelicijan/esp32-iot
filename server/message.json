@@ -3,13 +3,13 @@
     "data": [
         {
             "metric": "temperature",
-            "value": 22.3,
-            "timestamp": 1616637069
+            "value": "22.3",
+            "timestamp": "1616637069"
         },
         {
             "metric": "pressure",
-            "value": 1000,
-            "timestamp": 1616637069
+            "value": "1000",
+            "timestamp": "1616637069"
         }
     ]
 }

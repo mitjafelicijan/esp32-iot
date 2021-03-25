@@ -1,3 +1,13 @@
+# CoAP server
+
+## Structure
+
+- Steams (groups of devices with the same data structure)
+  - This would require all the streams to have the same structure.
+  - Maybe using NoSQL database to avoid this limitation?
+
+- tiedot - possible problems with storing float and then querying this data <,>
+
 
 ## Sending messages
 
