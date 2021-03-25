@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"log"
 	"net"
+	"time"
 
 	"github.com/HouzuoGuo/tiedot/db"
 	coap "github.com/dustin/go-coap"
@@ -27,7 +28,6 @@ type IncomingMessage struct {
 }
 
 func handleMessage(l *net.UDPConn, a *net.UDPAddr, m *coap.Message) *coap.Message {
-
 	log.Println(">>> Incoming message")
 
 	var message IncomingMessage
@@ -36,11 +36,14 @@ func handleMessage(l *net.UDPConn, a *net.UDPAddr, m *coap.Message) *coap.Messag
 	fmt.Println(message)
 
 	for _, item := range message.Data {
+		now := time.Now()
+
 		payload := map[string]interface{}{
-			"deviceId":  message.DeviceId,
-			"metric":    item.Metric,
-			"value":     item.Value,
-			"timestamp": item.Timestamp,
+			"deviceId":   message.DeviceId,
+			"metric":     item.Metric,
+			"value":      item.Value,
+			"timestamp":  item.Timestamp,
+			"insertedAt": fmt.Sprint(now.UnixNano()),
 		}
 
 		docId, err := metrics.Insert(payload)

@@ -1,1 +1,3 @@
 - Implement stream support via URI params/path.
+- Sorting with `tiedot` might be a problem.
+- 
