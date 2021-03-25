@@ -1,0 +1,15 @@
+{
+    "deviceId": "7a4dd0ca-5ef6-490e-8373-1bf5d428f24a",
+    "data": [
+        {
+            "metric": "temperature",
+            "value": "22.3",
+            "timestamp": "1616637069"
+        },
+        {
+            "metric": "pressure",
+            "value": "1000",
+            "timestamp": "1616637069"
+        }
+    ]
+}
