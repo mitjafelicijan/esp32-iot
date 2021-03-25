@@ -26,14 +26,6 @@ type IncomingMessage struct {
 	}
 }
 
-// FIXME: change name od the struct, its a stupid name
-type DatabaseEntry struct {
-	StreamId  string
-	Metric    string
-	Value     float64
-	Timestamp int16
-}
-
 func handleMessage(l *net.UDPConn, a *net.UDPAddr, m *coap.Message) *coap.Message {
 	var message IncomingMessage
 	json.Unmarshal(m.Payload, &message)
