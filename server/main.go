@@ -27,6 +27,9 @@ type IncomingMessage struct {
 }
 
 func handleMessage(l *net.UDPConn, a *net.UDPAddr, m *coap.Message) *coap.Message {
+
+	log.Println(">>> Incoming message")
+
 	var message IncomingMessage
 	json.Unmarshal(m.Payload, &message)
 

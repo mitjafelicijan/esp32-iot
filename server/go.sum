@@ -1,6 +1,4 @@
 github.com/HouzuoGuo/tiedot v0.0.0-20200330175510-6fb216206052 h1:JEzTqzN0IU5IePlaj/FbedlgANL92UCCMjEY8WkFyGA=
 github.com/HouzuoGuo/tiedot v0.0.0-20200330175510-6fb216206052/go.mod h1:J2FcoVwTshOscfh8D4LCCVRoHJJQTeCAEkeRSVGnLQs=
-github.com/dgrijalva/jwt-go v3.2.0+incompatible h1:7qlOGliEKZXTDg6OTjfoBKDXWrumCAMpl/TFQ4/5kLM=
-github.com/dgrijalva/jwt-go v3.2.0+incompatible/go.mod h1:E3ru+11k8xSBh+hMPgOLZmtrrCbhqsmaPHjLKYnJCaQ=
 github.com/dustin/go-coap v0.0.0-20190908170653-752e0f79981e h1:oppjHFVTardH+VyOD32F9uBtgT5Wd/qVqEGcwj389Lc=
 github.com/dustin/go-coap v0.0.0-20190908170653-752e0f79981e/go.mod h1:as2rZ2aojRzZF8bGx1bPAn1yi9ICG6LwkiPOj6PBtjc=
